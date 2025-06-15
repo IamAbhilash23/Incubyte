@@ -5,8 +5,10 @@ def stringcalculator(numbers):
         return int(numbers)
     elif numbers[0] == "/":
         result=0
-        delim=numbers[2]
+        delim=""
         l=numbers.split("\n")
+        for i in range(2,len(l[0])):
+            delim=delim+l[0][i]
         n=l[1].split(delim)
         for i in n:
             result+=int(i)

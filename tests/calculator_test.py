@@ -26,7 +26,9 @@ def test_stringcalculator_handling_with_different_delimiters():
     result=stringcalculator("//;\n1;2;3")
     assert result == 6
 
-
+def test_stringcalculator_handling_with_different_delimiters_with_negative_numbers():
+    result=stringcalculator("//!-;\n12!-;12!-;3")
+    assert result == 27
 
 
 
