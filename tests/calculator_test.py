@@ -16,10 +16,17 @@ def test_stringcalculator_should_return_one_on_shoudreturn_that_specifc_numericv
 def test_stringcalculator_should_return_that_specifc_sumvalue_string():
     result=stringcalculator("2,3")
     assert result == 5
-    
+
 def test_stringcalculator_with_backslash():
     result=stringcalculator("1\n2")
     assert result == 3
+
+#"//[delimiter]\n[numbers…]"
+def test_stringcalculator_handling_with_different_delimiters():
+    result=stringcalculator("//;\n1;2;3")
+    assert result == 6
+
+
 
 
 
