@@ -10,8 +10,13 @@ def stringcalculator(numbers):
         for i in range(2,len(l[0])):
             delim=delim+l[0][i]
         n=l[1].split(delim)
+        negatives = []
         for i in n:
+            if int(i)<0:
+                negatives.append(int(i))
             result+=int(i)
+        if negatives:
+            raise ValueError("negative numbers not allowed ",negatives)
         return result
     else:
         result=0
