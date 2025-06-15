@@ -1,4 +1,4 @@
-import re
 def stringcalculator(numbers):
-    return -1
+    if numbers=="":
+        return 0
     
