@@ -13,6 +13,10 @@ def test_stringcalculator_should_return_one_on_shoudreturn_that_specifc_numericv
     result=stringcalculator("2")
     assert result == 2
 
+def test_stringcalculator_should_return_that_specifc_sumvalue_string():
+    result=stringcalculator("2,3")
+    assert result == 5
+
 
 
 
